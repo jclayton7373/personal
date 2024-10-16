@@ -83,7 +83,6 @@ nav a#name {
 main {
   z-index: 1000;
   padding: 20px;
-  padding-bottom: 1000px;
   margin-left: 400px;
   font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;
@@ -102,6 +101,7 @@ main h2 {
   transition: color 0.5s;
   font-size: 30px;
   font-weight: 700;
+  margin-top: 70px;
 }
 main a {
   color: var(--link-color);

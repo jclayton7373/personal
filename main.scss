@@ -108,7 +108,6 @@ main {
   z-index: $z-index;
 
   padding: 20px;
-  padding-bottom: 1000px;
   margin-left: $nav-width + $nav-padding-left + $nav-padding-right;
 
   font-family: "Arimo", sans-serif;
@@ -129,6 +128,7 @@ main {
     transition: color 0.5s;
     font-size: 30px;
     font-weight: 700;
+    margin-top: 70px;
   }
 
   a {
