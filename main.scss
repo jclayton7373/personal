@@ -14,264 +14,264 @@ $z-index-color-picker-background: 1020;
 // <weight>: Use a value from 400 to 700
 
 // .arimo-<uniquifier > {
-//   font-family: "Arimo", sans-serif;
-//   font-optical-sizing: auto;
-//   font-weight: <weight>;
-//   font-style: normal;
+//     font-family: "Arimo", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
+//     font-style: normal;
 // }
 
 .rowdies-light {
-  font-family: "Rowdies", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .rowdies-regular {
-  font-family: "Rowdies", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .rowdies-bold {
-  font-family: "Rowdies", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 /** css variables */
 :root {
-  --main-color: #f4f4f4;
-  --secondary-color: #bf2828;
-  --main-text-color: #333333;
-  --link-color: #2a636a;
+    --main-color: #f4f4f4;
+    --secondary-color: #bf2828;
+    --main-text-color: #333333;
+    --link-color: #2a636a;
 }
 
 /* General styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: var(--main-color);
-  color: var(--main-text-color);
-  transition: color 0.5s, background-color 0.5s;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+    color: var(--main-text-color);
+    transition: color 0.5s, background-color 0.5s;
 }
 
 header h1 {
-  margin: 0;
+    margin: 0;
 }
 
 /* Navigation styles */
 nav {
-  z-index: $z-index;
+    z-index: $z-index;
 
-  background-color: var(--main-color);
-  color: var(--link-color);
-  transition: color 0.5s, background-color 0.5s;
-  padding: 40px $nav-padding-right 0 $nav-padding-left;
-  text-align: center;
-  width: $nav-width;
-  position: fixed;
-
-  a {
+    background-color: var(--main-color);
     color: var(--link-color);
     transition: color 0.5s, background-color 0.5s;
-    display: block;
-    margin: 20px 0;
-    text-decoration: none;
-    font-size: 30px;
+    padding: 40px $nav-padding-right 0 $nav-padding-left;
+    text-align: center;
+    width: $nav-width;
+    position: fixed;
 
-    font-family: "Arimo", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    a {
+        color: var(--link-color);
+        transition: color 0.5s, background-color 0.5s;
+        display: block;
+        margin: 20px 0;
+        text-decoration: none;
+        font-size: 30px;
 
-    &:hover {
-      color: var(--secondary-color);
-      transition: none;
-      font-weight: 700;
+        font-family: "Arimo", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+
+        &:hover {
+            color: var(--secondary-color);
+            transition: none;
+            font-weight: 700;
+        }
+
+        &#name {
+            font-family: "Rowdies", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color: var(--secondary-color);
+            margin: 0;
+            font-size: 60px; 
+            margin: 0 0 50px 0;
+        }
     }
-
-    &#name {
-      font-family: "Rowdies", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      color: var(--secondary-color);
-      margin: 0;
-      font-size: 60px; 
-      margin: 0 0 50px 0;
-    }
-  }
 }
 
 /* Main content styles */
 main {
-  z-index: $z-index;
+    z-index: $z-index;
 
-  padding: 20px;
-  margin-left: $nav-width + $nav-padding-left + $nav-padding-right;
+    padding: 20px;
+    margin-left: $nav-width + $nav-padding-left + $nav-padding-right;
 
-  font-family: "Arimo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  max-width: 600px;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 600px;
 
-  p {
-    text-indent: 20px;
-    font-size: 20px;
-    line-height: 1.5;
-    padding-left: 20px;
-  }
-
-  h2 {
-    color: var(--secondary-color);
-    transition: color 0.5s;
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 70px;
-  }
-
-  a {
-    color: var(--link-color);
-    transition: color 0.5s;
-    text-decoration: none;
-
-    &:hover {
-      color: var(--secondary-color);
+    p {
+        text-indent: 20px;
+        font-size: 20px;
+        line-height: 1.5;
+        padding-left: 20px;
     }
-  }
+
+    h2 {
+        color: var(--secondary-color);
+        transition: color 0.5s;
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: 70px;
+    }
+
+    a {
+        color: var(--link-color);
+        transition: color 0.5s;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--secondary-color);
+        }
+    }
 }
 
 /* Footer styles */
 footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 10px;
-  cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
 
-  #colorBlockContainer {
-    padding: 10px;
-    background-color: rgba(20, 20, 20, 0.1);
-    border-radius: 4px;
-  }
+    #colorBlockContainer {
+        padding: 10px;
+        background-color: rgba(20, 20, 20, 0.1);
+        border-radius: 4px;
+    }
 
-  &:hover {
-    background-color: rgba(20, 20, 20, 0.3);
-  }
+    &:hover {
+        background-color: rgba(20, 20, 20, 0.3);
+    }
 
-  span {
-    height: 25px;
-    width: 25px;
-    background-color: var(--secondary-color);
-    transition: background-color 0.5s;
-    border-radius: 50%;
-    display: inline-block;
+    span {
+        height: 25px;
+        width: 25px;
+        background-color: var(--secondary-color);
+        transition: background-color 0.5s;
+        border-radius: 50%;
+        display: inline-block;
 
-    &#color-block-1 {
-      background-color: var(--main-color);
+        &#color-block-1 {
+            background-color: var(--main-color);
+        }
+        &#color-block-2 {
+            background-color: var(--secondary-color);
+        }
+        &#color-block-3 {
+            background-color: var(--main-text-color);
+        }
+        &#color-block-4 {
+            background-color: var(--link-color);
+        }
     }
-    &#color-block-2 {
-      background-color: var(--secondary-color);
-    }
-    &#color-block-3 {
-      background-color: var(--main-text-color);
-    }
-    &#color-block-4 {
-      background-color: var(--link-color);
-    }
-  }
 }
 
 /* Color Picker */
 #colorPicker {
-  position: fixed;
-  width: 200px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  margin: 10px;
-  background-color: rgb(181, 179, 179);
-  border-radius: 3px;
-  z-index: $z-index-color-picker;
-  justify-content: space-between;
-  display: none;
-
-  &.active {
-    display: flex;
-  }
-
-  .colorPickerRow {
-    display: flex;
-    justify-content: space-between;
+    position: fixed;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
     margin: 10px;
-  }
+    background-color: rgb(181, 179, 179);
+    border-radius: 3px;
+    z-index: $z-index-color-picker;
+    justify-content: space-between;
+    display: none;
 
-  input {
-    width: 70px;
-    text-align: center;
-    padding: 1px;
-    margin-left: 10px;
-
-    font-family: "Courier New", Courier, monospace;
-  }
-
-  span {
-    height: 25px;
-    width: 25px;
-    background-color: var(--secondary-color);
-    transition: background-color 0.5s;
-    border-radius: 50%;
-    display: inline-block;
-
-    &#color-block-1 {
-      background-color: var(--main-color);
+    &.active {
+        display: flex;
     }
-    &#color-block-2 {
-      background-color: var(--secondary-color);
-    }
-    &#color-block-3 {
-      background-color: var(--main-text-color);
-    }
-    &#color-block-4 {
-      background-color: var(--link-color);
-    }
-  }
 
-  input {
-    &.is-invalid {
-      outline-color: #bf2828;
+    .colorPickerRow {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
     }
-  }
 
-  ul,
-  li {
-    margin: 0px;
-    padding: 0px;
-  }
+    input {
+        width: 70px;
+        text-align: center;
+        padding: 1px;
+        margin-left: 10px;
 
-  .colorPreset {
-    display: block;
-    cursor: pointer;
-
-    &:hover {
-      color: var(--secondary-color);
+        font-family: "Courier New", Courier, monospace;
     }
-  }
+
+    span {
+        height: 25px;
+        width: 25px;
+        background-color: var(--secondary-color);
+        transition: background-color 0.5s;
+        border-radius: 50%;
+        display: inline-block;
+
+        &#color-block-1 {
+            background-color: var(--main-color);
+        }
+        &#color-block-2 {
+            background-color: var(--secondary-color);
+        }
+        &#color-block-3 {
+            background-color: var(--main-text-color);
+        }
+        &#color-block-4 {
+            background-color: var(--link-color);
+        }
+    }
+
+    input {
+        &.is-invalid {
+            outline-color: #bf2828;
+        }
+    }
+
+    ul,
+    li {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .colorPreset {
+        display: block;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--secondary-color);
+        }
+    }
 }
 
 #colorPickerBackground {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: $z-index-color-picker-background;
-  display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: $z-index-color-picker-background;
+    display: none;
 
-  &.active {
-    display: block;
-  }
+    &.active {
+        display: block;
+    }
 }
