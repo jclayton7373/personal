@@ -34,6 +34,7 @@ body {
   padding: 0;
   background-color: var(--main-color);
   color: var(--main-text-color);
+  transition: color 0.5s, background-color 0.5s;
 }
 
 header h1 {
@@ -45,13 +46,15 @@ nav {
   z-index: 1000;
   background-color: var(--main-color);
   color: var(--link-color);
-  padding: 10px 0;
+  transition: color 0.5s, background-color 0.5s;
+  padding: 40px 50px 0 50px;
   text-align: center;
   width: 300px;
   position: fixed;
 }
 nav a {
   color: var(--link-color);
+  transition: color 0.5s, background-color 0.5s;
   display: block;
   margin: 20px 0;
   text-decoration: none;
@@ -63,6 +66,7 @@ nav a {
 }
 nav a:hover {
   color: var(--secondary-color);
+  transition: none;
   font-weight: 700;
 }
 nav a#name {
@@ -80,7 +84,7 @@ main {
   z-index: 1000;
   padding: 20px;
   padding-bottom: 1000px;
-  margin-left: 300px;
+  margin-left: 400px;
   font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -95,11 +99,13 @@ main p {
 }
 main h2 {
   color: var(--secondary-color);
+  transition: color 0.5s;
   font-size: 30px;
   font-weight: 700;
 }
 main a {
   color: var(--link-color);
+  transition: color 0.5s;
   text-decoration: none;
 }
 main a:hover {
@@ -111,11 +117,13 @@ footer {
   position: fixed;
   bottom: 0;
   right: 0;
-  padding: 10px;
   margin: 10px;
-  background-color: rgba(20, 20, 20, 0.1);
-  border-radius: 3px;
   cursor: pointer;
+}
+footer #colorBlockContainer {
+  padding: 10px;
+  background-color: rgba(20, 20, 20, 0.1);
+  border-radius: 4px;
 }
 footer:hover {
   background-color: rgba(20, 20, 20, 0.3);
@@ -124,6 +132,7 @@ footer span {
   height: 25px;
   width: 25px;
   background-color: var(--secondary-color);
+  transition: background-color 0.5s;
   border-radius: 50%;
   display: inline-block;
 }
@@ -174,6 +183,7 @@ footer span#color-block-4 {
   height: 25px;
   width: 25px;
   background-color: var(--secondary-color);
+  transition: background-color 0.5s;
   border-radius: 50%;
   display: inline-block;
 }
