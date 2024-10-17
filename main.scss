@@ -92,17 +92,6 @@ nav {
             transition: none;
             font-weight: 700;
         }
-
-        &#name {
-            font-family: "Rowdies", sans-serif;
-            text-shadow: 2px 2px var(--accent-color-3);
-            font-weight: 700;
-            font-style: normal;
-            color: var(--accent-color-1);
-            margin: 0;
-            font-size: 60px; 
-            margin: 0 0 50px 0;
-        }
     }
 }
 
@@ -252,6 +241,26 @@ footer {
         &.is-invalid {
             outline-color: #bf2828;
         }
+
+        &#color-input-1 {
+            outline-color: var(--main-color);
+        }
+
+        &#color-input-2 {
+            outline-color: var(--text-color);
+        }
+
+        &#color-input-3 {
+            outline-color: var(--accent-color-1);
+        }
+
+        &#color-input-4 {
+            outline-color: var(--accent-color-2);
+        }
+
+        &#color-input-5 {
+            outline-color: var(--accent-color-3);
+        }
     }
 
     li {
@@ -330,5 +339,44 @@ form {
     #message {
         height: 200px;
         resize: none;
+    }
+}
+
+svg {
+
+    fill: var(--main-color);
+    stroke: var(--text-color);
+    cursor: pointer;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    stroke-width: 22;
+
+    transition: stroke 0.3s, fill 0.3s;
+
+    &#nameVector {
+        width: 300px;
+        height: 200px;
+
+        fill: var(--accent-color-1);
+        stroke: var(--accent-color-3);
+        stroke-width: 90;
+
+        &:hover {
+            fill: var(--accent-color-2);
+            stroke: var(--accent-color-1);
+            transition: stroke 0.2s, fill 0.2s;
+        }
+    }
+
+    &#heartVector {
+        &:hover {
+            fill: var(--accent-color-2);
+            stroke: var(--accent-color-1);
+            transition: stroke 0.2s, fill 0.2s;
+        }
+        width: 23px;
+        height: 23px;
     }
 }

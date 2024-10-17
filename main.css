@@ -70,16 +70,6 @@ nav a:hover {
   transition: none;
   font-weight: 700;
 }
-nav a#name {
-  font-family: "Rowdies", sans-serif;
-  text-shadow: 2px 2px var(--accent-color-3);
-  font-weight: 700;
-  font-style: normal;
-  color: var(--accent-color-1);
-  margin: 0;
-  font-size: 60px;
-  margin: 0 0 50px 0;
-}
 
 /* Main content styles */
 main {
@@ -210,6 +200,21 @@ footer span#color-block-5 {
 #colorPicker input.is-invalid {
   outline-color: #bf2828;
 }
+#colorPicker input#color-input-1 {
+  outline-color: var(--main-color);
+}
+#colorPicker input#color-input-2 {
+  outline-color: var(--text-color);
+}
+#colorPicker input#color-input-3 {
+  outline-color: var(--accent-color-1);
+}
+#colorPicker input#color-input-4 {
+  outline-color: var(--accent-color-2);
+}
+#colorPicker input#color-input-5 {
+  outline-color: var(--accent-color-3);
+}
 #colorPicker li {
   margin: 10px;
   padding: 5px;
@@ -277,4 +282,36 @@ form #name, form #email, form #message, form #submit {
 form #message {
   height: 200px;
   resize: none;
+}
+
+svg {
+  fill: var(--main-color);
+  stroke: var(--text-color);
+  cursor: pointer;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-width: 22;
+  transition: stroke 0.3s, fill 0.3s;
+}
+svg#nameVector {
+  width: 300px;
+  height: 200px;
+  fill: var(--accent-color-1);
+  stroke: var(--accent-color-3);
+  stroke-width: 90;
+}
+svg#nameVector:hover {
+  fill: var(--accent-color-2);
+  stroke: var(--accent-color-1);
+  transition: stroke 0.2s, fill 0.2s;
+}
+svg#heartVector {
+  width: 23px;
+  height: 23px;
+}
+svg#heartVector:hover {
+  fill: var(--accent-color-2);
+  stroke: var(--accent-color-1);
+  transition: stroke 0.2s, fill 0.2s;
 }/*# sourceMappingURL=main.css.map */
