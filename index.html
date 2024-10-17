@@ -71,10 +71,63 @@
                 <span id="color-block-2">&nbsp</span>
                 <span id="color-block-3">&nbsp</span>
                 <span id="color-block-4">&nbsp</span>
+                <span id="color-block-5">&nbsp</span>
             </div>
         </footer>
         <div id="colorPicker">
+            <div id="colorPickerPresets">
+                <div id="presetsLabel">Presets</div>
+                <ul id="presetsList">
+                    <li
+                        class="colorPreset"
+                        data-main-color="#f4f4f4"
+                        data-text-color="#333333"
+                        data-accent-color-1="#bf2828"
+                        data-accent-color-2="#2a636a"
+                        data-accent-color-3="#f0c7ed"
+                    >
+                        default
+                    </li>
+                    <li
+                        class="colorPreset"
+                        data-main-color="#fefbf8"
+                        data-text-color="#000"
+                        data-accent-color-1="#f00"
+                        data-accent-color-2="#321eff"
+                        data-accent-color-3="#ffef00"
+                    >
+                        primary
+                    </li>
+                    <li
+                        class="colorPreset"
+                        data-main-color="#4f352c"
+                        data-text-color="#f0c7ed"
+                        data-accent-color-1="#f05482"
+                        data-accent-color-2="#c8db64"
+                        data-accent-color-3="#f4f4f4"
+                    >
+                        kendalls theme
+                    </li>
+                    <li
+                        class="colorPreset"
+                        data-main-color="#8ACE00"
+                        data-text-color="#000"
+                        data-accent-color-1="#000"
+                        data-accent-color-2="#000"
+                        data-accent-color-3="#000"
+                    >
+                        kamalas theme
+                    </li>
+                    <li
+                        class="colorPreset"
+                        id="randomColor"
+                    >
+                        randomize!
+                    </li>
+                </ul>
+            </div>
             <div>
+                <div id="customLabel">Custom</div>
                 <div class="colorPickerRow">
                     <span id="color-block-1">&nbsp</span>
                     <input type="text" id="color-input-1" value="#000000" />
@@ -91,30 +144,11 @@
                     <span id="color-block-4">&nbsp</span>
                     <input type="text" id="color-input-4" value="#000000" />
                 </div>
+                <div class="colorPickerRow">
+                    <span id="color-block-5">&nbsp</span>
+                    <input type="text" id="color-input-5" value="#000000" />
+                </div>
             </div>
-            <div id="colorPickerPresets">
-                <div>Presets</div>
-                <ul>
-                    <li
-                        class="colorPreset"
-                        data-main-color="#f4f4f4"
-                        data-secondary-color="#bf2828"
-                        data-main-text-color="#333333"
-                        data-link-color="#2a636a"
-                    >
-                        classic
-                    </li>
-                    <li
-                        class="colorPreset"
-                        data-main-color="#8ACE00"
-                        data-secondary-color="#000"
-                        data-main-text-color="#000"
-                        data-link-color="#000"
-                    >
-                        brat
-                    </li>
-                </ul>
-                <div id="randomColor">Random</div>
             </div>
         </div>
         <div id="colorPickerBackground"></div>
