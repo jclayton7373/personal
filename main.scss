@@ -4,6 +4,7 @@
 $nav-width: 300px;
 $nav-padding-left: 50px;
 $nav-padding-right: 50px;
+$body-width: 600px;
 $z-index: 1000;
 $z-index-color-picker: 1040;
 $z-index-color-picker-background: 1020;
@@ -116,7 +117,7 @@ main {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    max-width: 600px;
+    max-width: $body-width;
 
     p {
         text-indent: 20px;
@@ -306,5 +307,28 @@ footer {
 
     &.active {
         display: block;
+    }
+}
+
+form {
+    input, textarea {
+        background-color: #FFFFFF1A;
+        color: var(--accent-color-1);
+        border: none;
+    }
+
+    #name, #email, #message, #submit {
+        font-size: 16px;
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 4px;
+        outline-color: var(--accent-color-3);
+        font-family: monospace;
+        width: 600px;
+    }
+
+    #message {
+        height: 200px;
+        resize: none;
     }
 }

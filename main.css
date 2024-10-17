@@ -258,4 +258,23 @@ footer span#color-block-5 {
 }
 #colorPickerBackground.active {
   display: block;
+}
+
+form input, form textarea {
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  color: var(--accent-color-1);
+  border: none;
+}
+form #name, form #email, form #message, form #submit {
+  font-size: 16px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 4px;
+  outline-color: var(--accent-color-3);
+  font-family: monospace;
+  width: 600px;
+}
+form #message {
+  height: 200px;
+  resize: none;
 }/*# sourceMappingURL=main.css.map */
