@@ -5,6 +5,7 @@ export default class colorPicker {
         this.setColorsFromCookies();
         this.initializeColorPicker();
         this.initializeRandomButton();
+        this.initializePresetButtons();
         this.setInputValues();
     }
     
@@ -78,7 +79,9 @@ export default class colorPicker {
         this.addEventListenerToColorInput("#color-input-5", "--accent-color-3");
     }
 
-    initializeRandomButton() {
+    initializePresetButtons() {
+        const setColors = this.setColors.bind(this);
+
         $(".colorPreset:not(#randomColor)").on("click", function () {
             const mainColor = $(this).data("main-color");
             const textColor = $(this).data("text-color");
@@ -86,9 +89,11 @@ export default class colorPicker {
             const accentColor2 = $(this).data("accent-color-2");
             const accentColor3 = $(this).data("accent-color-3");
             
-            this.setColors(mainColor, textColor, accentColor1, accentColor2, accentColor3);
-        }.bind(this));
+            setColors(mainColor, textColor, accentColor1, accentColor2, accentColor3);
+        });
+    }
 
+    initializeRandomButton() {
         $("#randomColor").on("click", function () {
                 var timesRun = 0;
                 var myInterval = setInterval(function() {
@@ -100,10 +105,10 @@ export default class colorPicker {
                         this.setColors(mainColor, textColor, accentColor1, accentColor2, accentColor3);
 
                         timesRun += 1;
-                        if(timesRun === 7){
+                        if(timesRun === 10){
                                 clearInterval(myInterval);
                         }
-             }.bind(this), 200);
+             }.bind(this), 100);
         }.bind(this));
     }
 
